@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+:root {
+    --color1: #fff;
+    --color2: #3a0ca3;
+    --color3: #00eeff;
+    --color4: #1e0063;
+    --font: "Madimi One", sans-serif;
+}
+
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: -8px -8px;
+}
+
+/* main */
+
+.links {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link {
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    width: 40%;
+    color: var(--color1);
+    font-size: 25px;
+    font-family: var(--font);
+}
+.link a {
+    color: var(--color1);
+    text-decoration: none;
+}
+.link a:hover {
+    color: var(--color3);
+}
+.download {
+    height: 20px;
+}
+.bg-top {
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    right: 0px;
+}
+.bg {
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    z-index: -1;
+}
+hr {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    width: 90%;
+    background-color: var(--color1);
+    height: 2px;
+    border: none;
+}
+footer {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    color: var(--color1);
+    font-size: 15px;
+    font-family: var(--font);
+}
+/* Drag and drop activity */
+
+.heading {
+    text-align: center;
+    font-family: var(--font);
+    color: var(--color2);
+    font-size: 50px;
+}
+
+.img {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.img * {
+    height: 100px;
+}
+.back {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}
+.back-icon {
+    height: 40px;
+}
+.reset {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    border: none;
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}

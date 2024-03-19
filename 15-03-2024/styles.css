@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+:root {
+    --color1: #012a4a;
+    --color2: #00bbf9;
+    /* --color3: #4361ee;
+    --color4: #4cc9f0; */
+    --font: "Orbitron";
+}
+.auth-contianer {
+    height: 80%;
+    width: 80%;
+    background-color: #caf0f8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.auth-contianer div {
+    width: 50%;
+}
+.logo-container {
+    background-image: url("./login-background.gif");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+.logo-container .logo {
+    aspect-ratio: 1/1;
+    height: 50%;
+    border-radius: 100%;
+    animation: logozoom 2s 1;
+    box-shadow: rgba(0, 255, 234, 0.35) 0px 5px 15px;
+}
+
+@keyframes logozoom {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../images/login-form-bg.png");
+    background-size: cover;
+    background-position: bottom right;
+}
+.login h2 {
+    font-size: 40px;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    color: #03045e;
+}
+.login form {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login form .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inputs input {
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid #03045e;
+    font-size: 20px;
+    color: #03045e;
+    border-radius: 10px;
+}
+.inputs input::placeholder {
+    color: #03045e;
+}
+.new {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.login form button {
+    height: 10%;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #03045e;
+    color: #00b4d8;
+    font-size: 30px;
+}
+.login form button:hover {
+    background-color: #0077b6;
+    color: #03045e;
+}
+hr {
+    width: 80%;
+    height: 3px;
+    background-color: #03045e;
+    border: none;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: var(--color1);
+    margin: -8px -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img {
+    height: 260px;
+    width: 260px;
+    border-radius: 100%;
+    background-color: var(--color2);
+    animation: logozoom 2s 1;
+}
+@keyframes logozoom {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.avatar {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+.name {
+    text-align: center;
+    color: var(--color2);
+    font-family: var(--font);
+}
+hr {
+    width: 80%;
+    border: 1.5px solid var(--color2);
+}
+.bio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    border: var(--color2) solid 3px;
+    width: 60%;
+    text-align: center;
+    color: var(--color2);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: var(--font);
+}
+.links {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: var(--color2);
+}
+a:hover {
+    color: white;
+}
+.top {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+}
+.top2 {
+    position: absolute;
+    rotate: 90deg;
+    right: -8px;
+}
+iframe {
+    border-radius: 20px;
+    border: var(--color2) 3px solid;
+    margin-bottom: 20px;
+}
+.subs {
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+    color: var(--color2);
+    font-family: var(--font);
+}

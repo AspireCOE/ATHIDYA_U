@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Login</title>
+        <style>
+            .i1:hover {
+                color: red;
+                border: 4px solid red;
+            }
+            .i2:hover {
+                color: blue;
+                border: 4px solid blue;
+            }
+            .i3:hover {
+                color: yellow;
+                border: 4px solid yellow;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <div class="login-container">
+            <div class="bg"></div>
+            <div class="login-form">
+                <h2>LOGIN</h2>
+                <form action="">
+                    <div
+                        class="inp"
+                        onmouseover="this.style.color='red';"
+                        onmouseleave="this.style.color='#fff'"
+                    >
+                        <label for="">Username</label>
+                        <input
+                            type="text"
+                            class="i1"
+                            placeholder="Enter username"
+                        />
+                    </div>
+                    <div
+                        class="inp"
+                        onmouseover="this.style.color='blue';"
+                        onmouseleave="this.style.color='#fff'"
+                    >
+                        <label for="">Email</label>
+                        <input
+                            type="email"
+                            class="i2"
+                            placeholder="Enter email"
+                        />
+                    </div>
+                    <div
+                        class="inp"
+                        onmouseover="this.style.color='yellow';"
+                        onmouseleave="this.style.color='#fff'"
+                    >
+                        <label for="">Password</label>
+                        <input
+                            type="password"
+                            class="i3"
+                            placeholder="Enter password"
+                        />
+                    </div>
+                    <div class="btn">
+                        <button
+                            type="reset"
+                            onmouseenter="this.style.color='#3a0ca3'; this.style.background='#fff';"
+                            onmouseleave="this.style.color='#fff'; this.style.background='#3a0ca3'"
+                            style="background-color: #3a0ca3; color: #fff"
+                        >
+                            Reset
+                        </button>
+                        <button
+                            type="submit"
+                            onmouseenter="this.style.color='#3a0ca3'; this.style.background='#fff';"
+                            onmouseleave="this.style.color='#fff'; this.style.background='#3a0ca3'"
+                            style="background-color: #3a0ca3; color: #fff"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <br /><br />
+                <hr
+                    style="
+                        width: 80%;
+                        background-color: #fff;
+                        border: none;
+                        height: 3px;
+                    "
+                />
+                <p
+                    style="
+                        text-align: center;
+                        color: #fff;
+                        font-size: 25px;
+                        font-family: 'Madimi One', sans-serif;
+                    "
+                >
+                    Signup using
+                </p>
+                <div class="img">
+                    <a href="https://www.google.com">
+                        <img src="./google.png" alt="" />
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="./facebook.png" alt="" />
+                    </a>
+                    <a href="https://www.microsoft.com">
+                        <img src="./microsoft.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

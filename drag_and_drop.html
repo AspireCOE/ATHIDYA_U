@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <title>Drag And Drop Activity</title>
+    </head>
+    <body class="container">
+        <!-- Draggable -->
+        <h2 class="heading">Drag any icons</h2>
+        <div class="img">
+            <img
+                id="draggable-img1"
+                src="./images/google.png"
+                draggable="true"
+                alt=""
+            />
+            <img
+                id="draggable-img2"
+                src="./images/microsoft.png"
+                draggable="true"
+                alt=""
+            />
+            <img
+                id="draggable-img3"
+                src="./images/facebook.png"
+                draggable="true"
+                alt=""
+            />
+        </div>
+        <button
+            type="reset"
+            class="reset"
+            onclick="window.location.reload(true)"
+        >
+            <img src="./images/reset.png" class="back-icon" />Reset
+        </button>
+        <a href="./index.html" class="back">
+            <img src="./images/arow.png" class="back-icon" />Home</a
+        >
+        <script>
+            $(function () {
+                $("#draggable-img1").draggable();
+                $("#draggable-img2").draggable();
+                $("#draggable-img3").draggable();
+            });
+        </script>
+    </body>
+</html>

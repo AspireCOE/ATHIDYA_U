@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Form</title>
+    </head>
+    <body class="container">
+        <div class="form-container">
+            <h2>Details</h2>
+            <form action="">
+                <div class="inp">
+                    <label for="">Name</label
+                    ><input type="text" placeholder="Enter name" />
+                </div>
+                <div class="inp">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter Password" />
+                </div>
+                <div class="inp">
+                    <label for="">Phonenumber</label>
+                    <input type="number" placeholder="Enter Phonenumber" />
+                </div>
+                <div class="inp">
+                    <label for="">DOB</label>
+                    <input type="date" placeholder="Date of entry" />
+                </div>
+                <div class="inp">
+                    <label for="">Gender</label>
+                    <input type="radio" name="gender" id="gender" /> Male
+                    <input type="radio" name="gender" id="gender" /> Female
+                </div>
+                <div class="inp">
+                    <label for="">Course</label>
+                    <select name="" id="">
+                        <option value="">CSE</option>
+                        <option value="">IT</option>
+                        <option value="">CSBS</option>
+                        <option value="">ECE</option>
+                    </select>
+                </div>
+                <div class="inp">
+                    <label for="">Github</label>
+                    <input type="url" placeholder="Enter github ID" />
+                </div>
+                <div class="inp">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Enter Email" />
+                </div>
+                <div class="inp">
+                    <label for="">Resume</label>
+                    <input type="file" />
+                </div>
+                <div class="check">
+                    <input type="checkbox" />
+                    <p>Check this box for verification</p>
+                </div>
+                <div class="button">
+                    <button type="reset" class="btn">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="home">
+            <button
+                type="reset"
+                class="reset"
+                onclick="window.location.reload(true)"
+            >
+                <img src="../images/reset.png" class="back-icon" />Reset
+            </button>
+            <a href="../index.html" class="back">
+                <img src="../images/arow.png" class="back-icon" />Home</a
+            >
+        </div>
+    </body>
+</html>

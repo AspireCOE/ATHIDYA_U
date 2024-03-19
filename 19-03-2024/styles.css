@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("./Login-background.jpg") no-repeat;
+    margin: -8px -8px;
+}
+.login-container {
+    display: flex;
+}
+.bg {
+    background-image: url("./chess.jpg");
+    width: 30vw;
+    height: 70vh;
+    border-radius: 12.5px 0 0 12.5px;
+}
+.login-form {
+    background-color: rgba(205, 205, 205, 0.471);
+    height: 70vh;
+    width: 30vw;
+    border-radius: 0px 12.5px 12.5px 0px;
+}
+h2 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 60px;
+    font-family: "Madimi One", sans-serif;
+    color: #fff;
+}
+.login-form form {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    gap: 30px;
+}
+input {
+    background-color: transparent;
+    height: 40px;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    font-size: 25px;
+}
+input::placeholder {
+    font-size: 25px;
+    color: #fff;
+    align-items: center;
+    font-family: "Madimi One", sans-serif;
+}
+.inp {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+button {
+    height: 40px;
+    width: 60%;
+    font-family: "Madimi One", sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+}
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+img {
+    height: 60px;
+}
+img:hover {
+    transform: scale(1.2);
+}
