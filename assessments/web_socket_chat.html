@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css" />
+        <title>Chat</title>
+    </head>
+    <body class="container">
+        <div class="form-container">
+            <div class="chat" id="chat"></div>
+            <form action="" onsubmit="chat()">
+                <div class="inp">
+                    <input type="text" placeholder="Enter Username" id="user" />
+                    <input
+                        type="text"
+                        placeholder="Enter message"
+                        id="message"
+                    />
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <button
+                type="reset"
+                class="reset"
+                onclick="window.location.reload(true)"
+            >
+                <img src="../images/reset.png" class="back-icon" />Reset
+            </button>
+            <a href="../index.html" class="back">
+                <img src="../images/arow.png" class="back-icon" />Home</a
+            >
+        </div>
+        <script>
+            function chat() {
+                event.preventDefault();
+                var user = document.getElementById("user").value;
+                var message = document.getElementById("message").value;
+                var chatDiv = document.getElementById("chat");
+                chatDiv.innerHTML +=
+                    "<p class='msg'>" + user + " : " + message + "</p>";
+            }
+        </script>
+    </body>
+</html>

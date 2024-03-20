@@ -5,6 +5,7 @@
     --color2: #3a0ca3;
     --color3: #00eeff;
     --color4: #1e0063;
+    --color5: #1274de;
     --font: "Madimi One", sans-serif;
 }
 
@@ -124,4 +125,87 @@ footer {
     border-radius: 7.4px;
     font-family: var(--font);
     font-size: 30px;
+}
+
+.box {
+    top: 10%;
+    left: 10%;
+    height: 30%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: var(--color2);
+    border: var(--color3) 3px solid;
+}
+
+/* Web socket chat application */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background: var(--color4);
+}
+.chat {
+    height: 70%;
+    width: 70%;
+    background: var(--color5);
+    border-radius: 10px;
+}
+.form-container form {
+    width: 50%;
+    height: 10%;
+}
+.form-container form .inp {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-container form .inp input {
+    height: 35px;
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    background: transparent;
+    border: var(--color3) 3px solid;
+    border-radius: 10px;
+    font-family: var(--font);
+    color: var(--color3);
+}
+.form-container form .inp button {
+    height: 35px;
+    width: 20%;
+    font-size: 25px;
+    border: none;
+    background-color: var(--color3);
+    border-radius: 10px;
+    color: var(--color4);
+    font-family: var(--font);
+    cursor: pointer;
+}
+.msg {
+    width: max-content;
+    padding: 10px;
+    margin-left: 2%;
+    background: var(--color4);
+    color: var(--color3);
+    font-size: 20px;
+    font-family: var(--font);
+    border-radius: 10px 10px 10px 0px;
+}
+
+/* geolocation */
+.map-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
