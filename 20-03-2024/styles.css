@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+:root {
+    --color1: #fff;
+    --color2: #3a0ca3;
+    --color3: #00eeff;
+    --color4: #1e0063;
+    --color5: #1274de;
+    --font: "Madimi One", sans-serif;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color4);
+    margin: -8px -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.func-container {
+    border-radius: 10px;
+    height: 80%;
+    width: 60%;
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.func {
+    display: flex;
+    height: 7.5%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.func input {
+    width: 45%;
+    border: var(--color3) 3px solid;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: var(--font);
+    color: var(--color3);
+    text-align: center;
+}
+.func button {
+    width: 45%;
+    height: 90%;
+    border: none;
+    background: var(--color2);
+    color: var(--color3);
+    font-family: var(--font);
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.func button:hover {
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--color4);
+    font-family: var(--font);
+}
+.back {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}
+.back-icon {
+    height: 40px;
+}
+.reset {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    border: none;
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}
