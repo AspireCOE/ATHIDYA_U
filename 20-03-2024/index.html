@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./main.js"></script>
+    </head>
+    <body class="container">
+        <div class="func-container">
+            <h2>JavaScript Functions</h2>
+            <form
+                class="func"
+                onsubmit="{
+                    event.preventDefault();
+                    console.log(document.getElementById('input').value)
+                }"
+            >
+                <input type="text" id="input" />
+                <button type="submit">Console log</button>
+            </form>
+            <form class="func" onsubmit="normalFunction()">
+                <input type="text" id="input1" />
+                <button type="submit">Normal function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="parameterizedFunction(document.getElementById('input2').value)"
+            >
+                <input type="text" id="input2" />
+                <button type="submit">Parameterized function</button>
+            </form>
+            <form class="func" onsubmit="arrowFunction()">
+                <input type="text" id="input3" />
+                <button type="submit">Arrow function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="arrowParameterFunction(document.getElementById('input4').value)"
+            >
+                <input type="text" id="input4" />
+                <button type="submit">Parameter arrow function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="(
+                    function(){
+                        alert(document.getElementById('input5').value);
+                    }
+                )()"
+            >
+                <input type="text" id="input5" />
+                <button type="submit">Anonymous function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="(
+                    () => {
+                        alert(document.getElementById('input6').value);
+                    }
+                )()"
+            >
+                <input type="text" id="input6" />
+                <button type="submit">Anonymous arrow function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="(
+                    (a = document.getElementById('input7').value) => {
+                        alert(a);
+                    }
+                )()"
+            >
+                <input type="text" id="input7" />
+                <button type="submit">Anonymous Param function</button>
+            </form>
+            <form
+                class="func"
+                onsubmit="defaultParameter(document.getElementById('input8').value)"
+            >
+                <input type="text" id="input8" />
+                <button type="submit">Default parameter</button>
+            </form>
+            <button
+                type="reset"
+                class="reset"
+                onclick="window.location.reload(true)"
+            >
+                <img src="../images/reset.png" class="back-icon" />Reset
+            </button>
+            <a href="../index.html" class="back">
+                <img src="../images/arow.png" class="back-icon" />Home</a
+            >
+        </div>
+    </body>
+</html>
