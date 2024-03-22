@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Js variables</title>
+        <script src="main.js"></script>
+    </head>
+    <body class="container">
+        <h2>
+            Time out using drums <br />
+            background audio using time interval
+        </h2>
+        <div class="drums">
+            <img src="./tom1.png" alt="" onclick="timeOut()" />
+            <div class="lapse">Time lapsed : <span id="sec"></span></div>
+            <div class="timer" onclick="startTime()">
+                <p id="cmd">Start timer :</p>
+                <span id="time"></span>
+            </div>
+        </div>
+        <button
+            type="reset"
+            class="reset"
+            onclick="window.location.reload(true)"
+        >
+            <img src="../images/reset.png" class="back-icon" />Reset
+        </button>
+        <a href="../index.html" class="back">
+            <img src="../images/arow.png" class="back-icon" />Home</a
+        >
+    </body>
+</html>
