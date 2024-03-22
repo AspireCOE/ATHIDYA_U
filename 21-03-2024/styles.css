@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+:root {
+    --color1: #fff;
+    --color2: #3a0ca3;
+    --color3: #00eeff;
+    --color4: #1e0063;
+    --color5: #1274de;
+    --font: "Madimi One", sans-serif;
+}
+
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: -8px -8px;
+    background-color: var(--color4);
+}
+
+h2 {
+    font-family: var(--font);
+    color: var(--color3);
+    text-align: center;
+}
+.drums {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.timer {
+    display: flex;
+    align-items: center;
+}
+.lapse,
+.timer {
+    font-size: 25px;
+    color: var(--color5);
+    font-family: var(--font);
+}
+span {
+    color: var(--color3);
+}
+.drums img {
+    cursor: pointer;
+    padding: 20px;
+    height: 20vh;
+    aspect-ratio: 1/1;
+    border: solid 3px var(--color3);
+    border-radius: 20px;
+}
+.back {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}
+.back-icon {
+    height: 40px;
+}
+.reset {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    border: none;
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7.4px;
+    font-family: var(--font);
+    font-size: 30px;
+}
