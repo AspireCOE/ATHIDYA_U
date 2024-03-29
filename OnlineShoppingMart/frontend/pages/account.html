@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/styles.css" />
+        <script src="../static/js/home.js"></script>
+        <title>My Account</title>
+    </head>
+    <body class="accounts">
+        <!-- nav bar -->
+        <nav class="account-nav">
+            <a class="back" href="./home.html"
+                ><img src="../static/images/back.png" alt=""
+            /></a>
+            <div class="avatar">
+                <img src="../static/images/user.png" alt="" />
+                Mephisto
+            </div>
+            <div class="links">
+                <li><a href="#personal-details">Personal Details</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="">Login & security</a></li>
+                <li><a href="#address">Your Address</a></li>
+                <li><a href="#customer-service">Customer Service</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </div>
+        </nav>
+
+        <!-- account details -->
+        <section id="personal-details">
+            <h2 class="heading">Personal Details</h2>
+            <form action="" class="detail-form">
+                <img
+                    class="avatar-set"
+                    src="../static/images/user.png"
+                    alt=""
+                />
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Existing Password" />
+                <input type="password" placeholder="New Password" />
+                <button type="submit">Update Details</button>
+            </form>
+        </section>
+
+        <section id="orders">
+            <h2 class="heading">Orders</h2>
+            <div class="orders-list">
+                <div class="order">
+                    <p>Order Id</p>
+                    <p>Order Date</p>
+                    <p>Downlaod Order List</p>
+                    <p>Order Bill</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="address">
+            <h2 class="heading">Address</h2>
+            <form action="" class="detail-form">
+                <input type="text" placeholder="House Number" />
+                <input type="text" placeholder="Street/Landmark" />
+                <input type="text" placeholder="City/Town" />
+                <input type="text" placeholder="District" />
+                <input type="text" placeholder="State" />
+                <input type="number" placeholder="Pincode" />
+
+                <button type="submit">Update Details</button>
+            </form>
+        </section>
+        <section id="customer-service">
+            <h2 class="heading">Customer Service</h2>
+            <form action="" class="detail-form">
+                <h2>Write to us</h2>
+                <select name="" id="">
+                    <option value="">Choose type of feedback</option>
+                    <option value="">Order based queries</option>
+                    <option value="">Account based queries</option>
+                    <option value="">Bugs faced</option>
+                    <option value="">Others...</option>
+                </select>
+                <input
+                    type="text"
+                    placeholder="What you want ot tell us about"
+                />
+                <input type="file" placeholder="Proof" />
+
+                <button type="submit">Send feedback</button>
+            </form>
+        </section>
+    </body>
+</html>
