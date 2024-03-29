@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/styles.css" />
+        <script src="../static/js/home.js"></script>
+        <title>Shop Sphere</title>
+    </head>
+    <body class="container">
+        <!-- nav bar -->
+        <nav>
+            <div class="logo">
+                <img src="../static/images/logo.png" alt="" />SHOP SPHERE
+            </div>
+            <input type="text" placeholder="Search ..." />
+            <div class="links">
+                <a href="">Home</a>
+                <a href="" onclick="displayCategory()">Categories</a>
+                <a href="" onclick="displayCart()">Cart</a>
+                <a href="./account.html">My Account</a>
+                <a href="../index.html">Logout</a>
+            </div>
+        </nav>
+
+        <!-- catrgories -->
+
+        <div class="categories">
+            <h2>
+                Categories of products
+                <img
+                    onclick="closeCategory()"
+                    src="../static/images/close.png"
+                    alt="close"
+                />
+            </h2>
+            <ul>
+                <li>
+                    <img src="../static/images/electronics.png" alt="" /><a
+                        href=""
+                        >Electronics</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/fashion.png" alt="" /><a href=""
+                        >Fashion accessories</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/peronsal-care.png" alt="" /><a
+                        href=""
+                        >Personal Care</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/food.png" alt="" /><a href=""
+                        >Food and Beverages</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/bathroom.png" alt="" /><a href=""
+                        >Bathroom tools</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/health.png" alt="" /><a href=""
+                        >Health</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/footwear.png" alt="" /><a href=""
+                        >Footwear</a
+                    >
+                </li>
+                <li>
+                    <img src="../static/images/interior.png" alt="" /><a href=""
+                        >Interior design</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cart -->
+
+        <div class="cart-container">
+            <h2>
+                <span style="width: 7.5%"></span>
+                My Cart
+                <img
+                    onclick="closeCart()"
+                    src="../static/images/close.png"
+                    alt="close"
+                />
+            </h2>
+            <div class="items">
+                <div class="item">
+                    <p>Item Name</p>
+                    <p>Item Quantity</p>
+                    <p>Price</p>
+                </div>
+            </div>
+            <div class="checkout">
+                <p>Total : amount</p>
+                <button>Checkout</button>
+            </div>
+        </div>
+
+        <!-- products -->
+        <div class="blur"></div>
+    </body>
+</html>

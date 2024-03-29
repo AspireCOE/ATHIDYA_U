@@ -1,0 +1,2 @@
+> npm i @types/node --save-dev
+# for adding collections

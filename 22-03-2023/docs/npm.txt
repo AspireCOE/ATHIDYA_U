@@ -1,0 +1,11 @@
+> npm i typescript
+# install typescript
+# created node_modules, packages.json ,package-lock.json
+
+> tsc
+# typescript compiler
+
+> tsc filename.ts
+# creates js with same file name
+
+> node filename.js
