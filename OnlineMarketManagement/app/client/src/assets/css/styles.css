@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Madimi One");
+
+:root {
+    --font: "Madimi one", sans-serif;
+    --color1: #004b23;
+    --color2: #38b000;
+    --color3: #70e000;
+    --color4: #ccff33;
+    --color5: #253237;
+    --color6: #e0fbfc;
+}
+body {
+    margin: 0px;
+}
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Auth */
+
+/* Login */
+.login-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+.login-bg img {
+    height: 100%;
+    background-size: cover;
+}
+.login-form {
+    background: var(--color2);
+    height: 75%;
+    width: 35%;
+    border-radius: 10px;
+}
+.login-form form {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-form form .heads {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.login-form form h2 {
+    font-size: 50px;
+    color: var(--color4);
+}
+.login-form form .inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+}
+.login-form form .inputs input {
+    height: 25%;
+    width: 100%;
+    border: var(--color4) 4px solid;
+    font-family: var(--font);
+    text-align: center;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+    color: var(--color4);
+}
+.login-form form .links {
+    height: 30%;
+    width: 80%;
+}
+hr {
+    width: 80%;
+    height: 2px;
+    background: var(--color4);
+    border: none;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links .signup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+}
+.signup a {
+    color: var(--color4);
+    text-decoration: none;
+}
+.signup a:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+.links button {
+    margin: 2%;
+    height: 25%;
+    width: 40%;
+    font-family: var(--font);
+    font-size: 25px;
+    background: var(--color4);
+    color: var(--color1);
+    border: none;
+    border-radius: 10px;
+}
+.links button:hover {
+    color: var(--color4);
+    background: var(--color1);
+    border: var(--color5) 3px solid;
+}
+
+.login-form form .signup-inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.login-form form .signup-inputs input {
+    height: 15%;
+    width: 100%;
+    border: var(--color4) 4px solid;
+    font-family: var(--font);
+    text-align: center;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+    color: var(--color4);
+}
+
+.rules {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    padding: 1% 1%;
+    border: var(--color4) 2px solid;
+    font-family: var(--font);
+    color: var(--color4);
+    border-radius: 10px;
+}
+.rules .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.rules .close:hover {
+    color: red;
+}
+
+.bg-img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.login-animate {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

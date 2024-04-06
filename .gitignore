@@ -1,2 +1,8 @@
+### NODE MODULES ###
 node_modules
+
+### VS CODE ###
 .vscode
+
+### ENVIRONMENT VARIABLES ###
+.env

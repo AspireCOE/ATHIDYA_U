@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "proxy": "http://localhost:5173",
+    "main": "server",
+    "scripts": {
+        "start": "node server",
+        "dev": "nodemon server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Athidya_U",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mysql2": "^3.9.3"
+    }
+}
