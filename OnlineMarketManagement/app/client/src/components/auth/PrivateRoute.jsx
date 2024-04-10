@@ -1,3 +1,4 @@
+import Accounts from "../func/Accounts";
 import Home from "../func/Home";
 import Login from "./Login";
 
@@ -7,6 +8,8 @@ const PrivateRoute = (props) => {
         switch (props.to) {
             case "/home":
                 return <Home />;
+            case "/account":
+                return <Accounts />;
             default:
                 return <Login />;
         }

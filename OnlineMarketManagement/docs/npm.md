@@ -19,8 +19,6 @@
 
 > npm i react-cookie
 
-> npm i axios
-
 ### Commands executed on back end
 
 > npm i express
