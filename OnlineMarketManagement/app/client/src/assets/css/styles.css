@@ -12,6 +12,9 @@
 body {
     margin: 0px;
 }
+html {
+    background: var(--color1);
+}
 .container {
     position: absolute;
     height: 100%;
@@ -126,6 +129,8 @@ hr {
     border: var(--color5) 3px solid;
 }
 
+/* SIGNUP */
+
 .login-form form .signup-inputs {
     width: 80%;
     display: flex;
@@ -186,4 +191,415 @@ hr {
     100% {
         transform: rotate(-360deg);
     }
+}
+
+/* navbar */
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 7.5%;
+    background: var(--color3);
+    font-family: var(--font);
+    display: flex;
+    justify-content: space-around;
+    color: var(--color1);
+    border-radius: 0px 0px 10px 10px;
+}
+nav div {
+    display: flex;
+    align-items: center;
+}
+.nav-div1 {
+    gap: 20px;
+    width: 25%;
+    font-size: 1em;
+}
+.nav-div1 img {
+    height: 75%;
+    aspect-ratio: 1/1;
+}
+.nav-div2 {
+    width: 17.5%;
+}
+.nav-div2 input {
+    width: 100%;
+    height: 60%;
+    border: none;
+    border-radius: 10px;
+    background: var(--color1);
+    color: var(--color6);
+    background-image: url("../images/search.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: right 3px;
+    background-position-y: top 3px;
+    padding-left: 10px;
+    color: var(--color6);
+    font-family: var(--font);
+}
+.nav-div2 input::placeholder {
+    color: var(--color6);
+    font-family: var(--font);
+}
+.nav-div3 {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-div3 a {
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-div3 a:hover {
+    color: var(--color5);
+    scale: 1.2;
+    text-decoration: underline;
+}
+.cart {
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    height: 80%;
+    width: 40%;
+    background-color: var(--color2);
+    border-radius: 10px;
+    flex-direction: column;
+}
+.cart .list {
+    width: 80%;
+    height: 75%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    font-size: 15px;
+}
+.list .item {
+    width: 100%;
+    justify-content: space-between;
+}
+.checkout {
+    height: 7.5%;
+    width: 20%;
+    font-family: var(--font);
+    color: var(--color4);
+    background: var(--color1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: var(--color4);
+    cursor: pointer;
+}
+.checkout:hover {
+    background-color: var(--color4);
+    border: 3px solid var(--color1);
+    color: var(--color1);
+}
+/* HOME */
+.welcome {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    left: 2.5%;
+    height: 10%;
+    width: 40%;
+    color: var(--color3);
+    font-family: var(--font);
+    font-size: 35px;
+}
+.welcome span {
+    color: var(--color4);
+}
+.cards {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 2.5%;
+    top: 10%;
+    height: 50%;
+}
+.cards .left {
+    rotate: 180deg;
+}
+.cards .left img:hover,
+.cards .right img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+.cards .left img,
+.cards .right img {
+    height: 5vh;
+}
+.center {
+    height: 100%;
+    aspect-ratio: 1/1;
+    align-items: center;
+    font-family: var(--font);
+    color: white;
+    font-size: 25px;
+}
+.center .content {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-size: cover;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content * {
+    width: 80%;
+    text-shadow: 0 0 3px #000;
+}
+
+.items {
+    color: var(--color3);
+    font-family: var(--font);
+    height: 70%;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: 2.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+}
+.items .item {
+    overflow: scroll;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    margin-left: 20px;
+}
+.item div {
+    display: flex;
+    height: max-content;
+}
+.item div img {
+    margin: 20px;
+    height: 20vh;
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.items div img:hover {
+    scale: 1.2;
+}
+.items a {
+    color: #70e000;
+    margin-left: 20px;
+}
+.items a:hover {
+    color: var(--color6);
+}
+
+/* Accounts */
+.account-nav {
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 0 10px 10px 0;
+    background: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font);
+    color: var(--color1);
+}
+.account-nav .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin-top: 20px;
+    gap: 20px;
+}
+.account-nav .logout {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    height: 10%;
+}
+.account-nav .options {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.options a {
+    color: var(--color1);
+    font-size: 30px;
+}
+.options a:hover {
+    color: var(--color4);
+}
+.link {
+    display: flex;
+    height: 7.5%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.link:hover {
+    scale: 1.2;
+}
+.link img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.account-nav .top img,
+.account-nav .logout img {
+    height: 30%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.sections {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    gap: 10%;
+}
+section {
+    position: relative;
+    top: 0px;
+    margin-right: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+}
+section .heading {
+    font-size: 30px;
+    color: var(--color4);
+    text-decoration: underline;
+}
+section .details {
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color4);
+}
+.details .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 80%;
+}
+.details .detail label {
+    width: 40%;
+    color: var(--color2);
+    font-size: 20px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    height: 150%;
+    text-align: right;
+    font-size: 20px;
+}
+.info input {
+    height: 40%;
+    width: 130%;
+    border-radius: 10px;
+    color: var(--color4);
+    background-color: transparent;
+    border: 3px solid var(--color4);
+}
+.orders-list {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: var(--color3);
+}
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-form {
+    padding-top: 2%;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5%;
+}
+.detail-form input {
+    width: 55%;
+    height: 7.5%;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    color: var(--color3);
+    padding-left: 5%;
+    font-family: var(--font);
+    font-size: 20px;
+    border: 3px solid var(--color2);
+}
+.detail-form select {
+    width: 60%;
+    height: 7.5%;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    color: var(--color3);
+    padding-left: 5%;
+    font-family: var(--font);
+    font-size: 20px;
+    border: 3px solid var(--color2);
+}
+.detail-form h2 {
+    color: var(--color3);
+    font-size: 25px;
+}
+.detail-form button {
+    height: 7.5%;
+    width: 20%;
+    background: var(--color2);
+    font-size: 20px;
+    font-family: var(--font);
+    color: var(--color4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.detail-form button:hover {
+    border: solid 3px var(--color3);
+    background: var(--color1);
+    color: var(--color3);
 }

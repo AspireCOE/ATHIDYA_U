@@ -24,6 +24,7 @@ const Login = () => {
             .then((resp) => {
                 if (resp.data === true) {
                     setCookie("username", username, { path: "/" });
+                    setCookie("isLoggedIn", true, { path: "/" });
                     window.location.replace("/home");
                 } else {
                     if (window.confirm("Not registered yet ?")) {
