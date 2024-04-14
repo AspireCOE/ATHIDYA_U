@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { useCookies } from "react-cookie";
 
 const Navbar = () => {
     const [cookie, setCookie] = useCookies(["user"]);
     const [cart, setCart] = useState("none");
+    const loggedIn = document.cookie.split("; ")[1].split("=")[1];
+    const [link, setLink] = useState("LOGIN");
+    useEffect(() => {
+        if (loggedIn === true) {
+            setLink("LOGOUT");
+        } else {
+            setLink("LOGIN");
+        }
+    });
     const logout = (e) => {
         e.preventDefault();
         setCookie("username", "", { path: "/" });
@@ -25,7 +34,7 @@ const Navbar = () => {
                 />
             </div>
             <div className="nav-div3">
-                <a href="">PRODUCTS</a>
+                <a href="/products">PRODUCTS</a>
                 <a
                     href=""
                     onClick={(e) => {
@@ -37,7 +46,7 @@ const Navbar = () => {
                 </a>
                 <a href="/account">ACCOUNT</a>
                 <a href="/" onClick={logout}>
-                    LOGOUT
+                    {link}
                 </a>
             </div>
             <div className="cart" style={{ display: cart }}>
