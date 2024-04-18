@@ -17,6 +17,10 @@ const App = () => {
                         path="/account"
                         element={<PrivateRoute to="/account" />}
                     />
+                    <Route
+                        path="/product"
+                        element={<PrivateRoute to="/product" />}
+                    />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </Router>

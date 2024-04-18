@@ -13,12 +13,16 @@
 
 > /api/v1/login
 
-| Case type                              | Functinoality          | Description                               | Implementation | Testing |
-| :------------------------------------- | :--------------------- | :---------------------------------------- | :------------- | ------- |
-| <span class='positive'>Positive</span> | Login                  | login with valid credentials              | &check;        | &check; |
-| <span class='negative'>Negative</span> | LoginWithEmptyCreds    | login with credentials as null or empty   | &check;        | &check; |
-| <span class='negative'>Negative</span> | LoginWithWrongUsername | login with non existing or wrong username | &check;        | &check; |
-| <span class='negative'>Negative</span> | LoginWithWrongPassword | login with wrong username                 | &check;        | &check; |
+| Case type                              | Functinoality              | Description                               | Implementation | Testing |
+| :------------------------------------- | :------------------------- | :---------------------------------------- | :------------- | ------- |
+| <span class='positive'>Positive</span> | Login                      | login with valid credentials              | &check;        | &check; |
+| <span class='negative'>Negative</span> | LoginWithEmptyCreds        | login with credentials as null or empty   | &check;        | &check; |
+| <span class='negative'>Negative</span> | LoginWithWrongUsername     | login with non existing or wrong username | &check;        | &check; |
+| <span class='negative'>Negative</span> | LoginWithWrongPassword     | login with wrong username                 | &check;        | &check; |
+| <span class='negative'>Negative</span> | LoginWithUsernameAsInteger | login with username as integer            | &cross;        | &cross; |
+| <span class='negative'>Negative</span> | LoginWithPasswordAsInteger | login with password as integer            | &cross;        | &cross; |
+| <span class='positive'>Positive</span> | LoginWithSQLi              | Try logging in using sql injection        | &cross;        | &cross; |
+| <span class='negative'>Negative</span> | XSSinLoginPage             | Try cross site scripting in login page    | &cross;        | &cross; |
 
 ### Signup endpoint
 

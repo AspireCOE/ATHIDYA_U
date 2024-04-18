@@ -1,0 +1,5 @@
+[
+    { "name": "aaa", "age": 25, "isAdmin": false, "comment": "abcd" },
+    { "name": "bbb", "age": 23, "isAdmin": true, "comment": "aaaaa" },
+    { "name": "ccc", "age": 23, "isAdmin": false, "comment": "hi" }
+]
