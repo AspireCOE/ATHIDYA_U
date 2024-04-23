@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "6819",
+      "name": "ddd",
+      "age": 30,
+      "isAdmin": false,
+      "comment": "comment"
+    },
+    {
+      "id": "8c83",
+      "name": "aaa",
+      "age": 25,
+      "isAdmin": false,
+      "comment": "comment"
+    },
+    {
+      "id": "fae2",
+      "name": "bbb",
+      "age": 25,
+      "isAdmin": false,
+      "comment": "comment"
+    }
+  ],
+  "products": []
+}
