@@ -11,7 +11,7 @@ const PrivateRoute = (props) => {
                 return <Home />;
             case "/account":
                 return <Accounts />;
-            case "/product":
+            case "/products":
                 return <Products />;
             default:
                 return <Login />;

@@ -1,0 +1,36 @@
+{
+    "vegetables": [
+        "carrot",
+        "broccoli",
+        "spinach",
+        "lettuce",
+        "cucumber",
+        "tomato",
+        "potato",
+        "onion",
+        "bell pepper",
+        "cabbage",
+        "zucchini",
+        "eggplant",
+        "green beans",
+        "radish",
+        "sweet potato"
+    ],
+    "fruits": [
+        "apple",
+        "banana",
+        "orange",
+        "strawberry",
+        "grape",
+        "watermelon",
+        "pineapple",
+        "kiwi",
+        "mango",
+        "pear",
+        "peach",
+        "plum",
+        "blueberry",
+        "raspberry",
+        "cherry"
+    ]
+}

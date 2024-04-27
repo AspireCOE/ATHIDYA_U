@@ -4,7 +4,7 @@ var url = require("url");
 // file system
 var fs = require("fs");
 
-const app = http.createServer((req, res) => {
+const app = http.createServer((request, response) => {
     // fs.readFile("index.html", (err, data) => {
     //     res.writeHead(200, { "Content-Type": "text/html" });
     //     res.write(data);
