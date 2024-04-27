@@ -9,19 +9,19 @@ const data = JSON.parse(file);
 
 const port = 5000;
 
-app.post("/api/v1/post", (req, res) => {
-    data.push(req.body);
+app.post("/api/v1/post", (request, response) => {
+    data.push(request.body);
     fs.writeFile("data.json", JSON.stringify(data), (err) => {
         if (err) throw err;
     });
     res.json(true);
 });
 
-app.get("/api/v1/get", (req, res) => {
+app.get("/api/v1/get", (request, response) => {
     res.json(data);
 });
 
-app.get("/api/v1/user", (req, res) => {
+app.get("/api/v1/user", (request, response) => {
     var ret = { status: "no data found" };
     var name = req.query["name"];
     data.forEach((ele) => {
@@ -32,7 +32,7 @@ app.get("/api/v1/user", (req, res) => {
     res.json(ret);
 });
 
-app.get("/api/v1/age/:age", (req, res) => {
+app.get("/api/v1/age/:age", (request, response) => {
     var ret = [];
     var age = req.params.age;
     data.forEach((ele) => {
@@ -43,7 +43,7 @@ app.get("/api/v1/age/:age", (req, res) => {
     res.json(ret);
 });
 
-app.put("/api/v1/put", (req, res) => {
+app.put("/api/v1/put", (request, response) => {
     var name = req.body.name;
     var age = req.body.age;
     var isAdmin = req.body.isAdmin;
@@ -61,7 +61,7 @@ app.put("/api/v1/put", (req, res) => {
     res.json(true);
 });
 
-app.delete("/api/v1/delete", (req, res) => {
+app.delete("/api/v1/delete", (request, response) => {
     var name = req.query["name"];
     console.log(data);
     data.forEach((ele, index) => {

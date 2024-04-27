@@ -6,14 +6,7 @@ const Navbar = () => {
     const [cookie, setCookie] = useCookies(["user"]);
     const [cart, setCart] = useState("none");
     const loggedIn = document.cookie.split("; ")[1].split("=")[1];
-    const [link, setLink] = useState("LOGIN");
-    useEffect(() => {
-        if (loggedIn === true) {
-            setLink("LOGOUT");
-        } else {
-            setLink("LOGIN");
-        }
-    });
+    const [link, setLink] = useState("");
     const logout = (e) => {
         e.preventDefault();
         setCookie("username", "", { path: "/" });
@@ -22,7 +15,13 @@ const Navbar = () => {
     };
     return (
         <nav style={{ zIndex: 1 }}>
-            <div className="nav-div1">
+            <div
+                className="nav-div1"
+                onClick={(e) => {
+                    e.preventDefault();
+                    window.location.replace("/home");
+                }}
+            >
                 <img src={logo} alt="" />
                 <h1>Online Market</h1>
             </div>
@@ -46,7 +45,7 @@ const Navbar = () => {
                 </a>
                 <a href="/account">ACCOUNT</a>
                 <a href="/" onClick={logout}>
-                    {link}
+                    {loggedIn ? "LOGOUT" : "LOGIN"}
                 </a>
             </div>
             <div className="cart" style={{ display: cart }}>

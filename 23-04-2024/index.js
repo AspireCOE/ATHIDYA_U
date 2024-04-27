@@ -8,7 +8,7 @@ const port = 5000;
 const Url = "http://localhost:3000";
 
 // POST
-app.post("/addUser", (req, res) => {
+app.post("/addUser", (request, response) => {
     axios
         .post(Url + "/users", req.body)
         .then((resp) => {
@@ -22,9 +22,9 @@ app.post("/addUser", (req, res) => {
 });
 
 // GET, GET by query
-app.get("/getUser", (req, res) => {
+app.get("/getUser", (request, response) => {
     var query = "";
-    if (req.query["name"] !== undefined) {
+    if (request.query["name"] !== undefined) {
         query = "?name=" + req.query["name"];
     } else {
         query = "";
@@ -40,7 +40,7 @@ app.get("/getUser", (req, res) => {
 });
 
 // GET by params
-app.get("/getUser/:age", (req, res) => {
+app.get("/getUser/:age", (request, response) => {
     var age = req.params.age;
     axios
         .get(Url + "/users?age=" + age)
@@ -53,7 +53,7 @@ app.get("/getUser/:age", (req, res) => {
 });
 
 // PUT
-app.put("/updateUser/:id", (req, res) => {
+app.put("/updateUser/:id", (request, response) => {
     axios
         .put(Url + "/users/" + req.params.id, req.body)
         .then((resp) => {
@@ -67,7 +67,7 @@ app.put("/updateUser/:id", (req, res) => {
 });
 
 // DELETE
-app.delete("/deleteUser/:id", (req, res) => {
+app.delete("/deleteUser/:id", (request, response) => {
     axios
         .delete(Url + "/users/" + req.params.id)
         .then((resp) => {
@@ -81,7 +81,7 @@ app.delete("/deleteUser/:id", (req, res) => {
 });
 
 // PATCH
-app.patch("/updateUser/:id", (req, res) => {
+app.patch("/updateUser/:id", (request, response) => {
     axios
         .patch(Url + "/users/" + req.params.id, req.body)
         .then((resp) => {
@@ -94,6 +94,6 @@ app.patch("/updateUser/:id", (req, res) => {
         });
 });
 
-app.listen(port, (req, res) => {
+app.listen(port, (request, response) => {
     console.log(`Server running on port ${port}`);
 });

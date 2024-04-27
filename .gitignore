@@ -3,6 +3,7 @@ node_modules
 
 ### VS CODE ###
 .vscode
+settings.json
 
 ### ENVIRONMENT VARIABLES ###
 .env

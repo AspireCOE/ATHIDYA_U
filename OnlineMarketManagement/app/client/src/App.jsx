@@ -18,8 +18,8 @@ const App = () => {
                         element={<PrivateRoute to="/account" />}
                     />
                     <Route
-                        path="/product"
-                        element={<PrivateRoute to="/product" />}
+                        path="/products"
+                        element={<PrivateRoute to="/products" />}
                     />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
