@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
 
-dotenv.config();
-
-mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect("mongodb://localhost:27017/Aspire");
 
 const database = mongoose.connection;
 
@@ -12,7 +9,7 @@ database.on("error", (err) => {
 });
 
 database.on("connected", () => {
-    console.log(`Connected to database`);
+    console.log(`Connected to database from mongoose package ...`);
 });
 
 export default database;
