@@ -19,6 +19,8 @@
 | 22-04-2024             | Express JS middleware                  |
 | 23-04-2024             | Express JS db conenctivity and methods |
 | 25-04-2024             | Express JS using MVC in api            |
+| 03-05-2024             | MongoDB commands                       |
+| 06-05-2024             | Express Mongodb connection             |
 | OnlineShoppingMart     | online shopping mart application UI    |
 | OnlineMarketManagement | Online market application with docs    |
 | assignments            | assignemtns on HTML, CSS, SQL, etc.,   |

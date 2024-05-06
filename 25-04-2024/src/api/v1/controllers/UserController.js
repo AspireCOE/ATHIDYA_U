@@ -1,20 +1,28 @@
-export const GetUser = (request, response) => {
+import { UserLoginModel } from "../models/UserModel.js";
+
+export const GetUser = (req, res) => {
     return res.json();
 };
 
-export const GetUserById = (request, response) => {
+export const GetUserById = (req, res) => {
     var id = req.params.id;
 };
 
-export const PostUser = (request, response) => {
-    var postBody = {
+export const PostUser = async (req, res) => {
+    let postBody = new UserLoginModel({
         name: req.body.name,
-        age: req.body.age,
-        isAdmin: req.body.isAdmin,
-        comment: req.body.comment,
-    };
+        password: req.body.password,
+        email: req.body.email,
+        phonenumber: req.body.phonenumber,
+    });
+    try {
+        const postData = postBody.save();
+        res.status(201).json(postData);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
 };
 
-export const DeleteUser = (request, response) => {
+export const DeleteUser = (req, res) => {
     var id = req.params.id;
 };
