@@ -22,6 +22,7 @@
 | 03-05-2024             | MongoDB commands                       |
 | 06-05-2024             | Express Mongodb connection             |
 | 08-05-2024             | Express mongoose connection            |
+| 13-05-2024             | Angular basic                          |
 | OnlineShoppingMart     | online shopping mart application UI    |
 | OnlineMarketManagement | Online market application with docs    |
 | assignments            | assignemtns on HTML, CSS, SQL, etc.,   |
