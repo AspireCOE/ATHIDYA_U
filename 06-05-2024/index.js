@@ -1,6 +1,6 @@
 import express from "express";
 import database from "./DbConnection.js";
-import db from "./DbConnect.js";
+import { db, collection } from "./DbConnect.js";
 
 // database from DbConnection.js is using mongoose
 // db from DbConnect.js is using mongodb
@@ -10,7 +10,9 @@ app.use(express.json());
 
 const port = 5000;
 
-db();
+// const cursorFind = collection.find();
+// const data = await cursorFind.toArray();
+// console.table(data);
 
 app.get("/", (req, res) => {
     res.json();

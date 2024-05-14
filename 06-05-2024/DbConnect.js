@@ -1,18 +1,25 @@
-import mongodb from "mongodb";
+import mongodb, { MongoClient } from "mongodb";
 
 const url = "mongodb://localhost:27017/";
 
 const mongoClient = new mongodb.MongoClient(url);
 
-const db = async () => {
+var collectionLink;
+
+export const db = async () => {
     try {
         await mongoClient.connect();
         const db = mongoClient.db("Aspire");
-        const collection = db.collection("Sample");
-        console.log("Connected to db from mongodb package ...");
+        collectionLink = db.collection("Sample");
+        console.log(
+            `Connected to database ${db.databaseName} from mongodb package ...`
+        );
     } finally {
         await mongoClient.close();
     }
 };
 
-export default db;
+export const collection = collectionLink;
+const cursorFind = collection.find();
+const data = await cursorFind.toArray();
+console.table(data);
